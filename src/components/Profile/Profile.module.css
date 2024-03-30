@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 500px;
+
+  border: 3px solid black;
+  border-radius: 10px;
+  padding-top: 20px;
+}
+
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-color: #2a2a2a;
+  border-radius: 50%;
+}
+.username {
+  font-size: 40px;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 10px;
+}
+
+.tag {
+  font-size: 28px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.location {
+  font-size: 28px;
+  font-weight: 500;
+  color: #808080;
+}
+
+.list {
+  display: flex;
+  width: 100%;
+  border-radius: 0 0 10px 10px;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 0 0 10px 10px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: black;
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  background-color: #d3d3d3;
+  row-gap: 4px;
+  border-top: 3px solid #808080;
+}
+
+.item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px; /* Ширина границы */
+  height: 100%;
+  width: 4px; /* Толщина границы */
+  background-color: #808080;
+}
+
+.item:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.item:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+.blockname {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: 700;
+  color: #000000;
+}
